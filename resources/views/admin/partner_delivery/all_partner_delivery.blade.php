@@ -36,12 +36,8 @@
                                                                         <input type="text" class="form-control" name="name" id="name" placeholder="partner delivery name">
                                                                     </div>
                                                                     <div class="form-group">
-                                                                        <label >Phí ship đếm</label>
+                                                                        <label >Phí ship</label>
                                                                         <input type="text" class="form-control" name="shipping_fee" id="shipping_fee" placeholder="shipping fee">
-                                                                    </div>
-                                                                    <div class="form-group">
-                                                                        <label>Phí ship đi</label>
-                                                                        <input type="text" class="form-control" name="return_fee" id="return_fee" placeholder="return fee">
                                                                     </div>
                                                                     <!-- /.card-body -->
 
@@ -75,7 +71,6 @@
                                     <td>{{ $eachPartnerDelivery->id_partner_delivery }}</td>
                                     <td style="color: red">{{ $eachPartnerDelivery->name }}</td>
                                     <td style="color: green">{{ $eachPartnerDelivery->shipping_fee }}</td>
-                                    <td style="color: yellowgreen">{{ $eachPartnerDelivery->return_fee }}</td>
                                     <td>
                                         <a href="{{URL::to('/edit-partner-delivery/'.$eachPartnerDelivery->id_partner_delivery)}}">Sửa</a>
                                     </td>
